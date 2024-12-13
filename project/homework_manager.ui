@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HomeworkManagerUI</class>
+ <widget class="QWidget" name="HomeworkManagerUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Менеджер домашних заданий</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QPushButton" name="addTaskButton">
+     <property name="text">
+      <string>Добавить задание</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QListWidget" name="taskList"/>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="buttonLayout">
+     <item>
+      <widget class="QPushButton" name="deleteButton">
+       <property name="text">
+        <string>🗑️ Удалить</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="completeButton">
+       <property name="text">
+        <string>✅ Выполнить</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="completedLabel">
+     <property name="text">
+      <string>Выполненные задания:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QListWidget" name="completedTaskList"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

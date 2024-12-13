@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddTaskWindow</class>
+ <widget class="QWidget" name="AddTaskWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Добавить задание</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #f9f9f9; border: 1px solid #cccccc; border-radius: 10px;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>12</number>
+   </property>
+   <property name="leftMargin">
+    <number>15</number>
+   </property>
+   <property name="topMargin">
+    <number>15</number>
+   </property>
+   <property name="rightMargin">
+    <number>15</number>
+   </property>
+   <property name="bottomMargin">
+    <number>15</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="subject_label">
+     <property name="text">
+      <string>Предмет:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="subject_input">
+     <property name="placeholderText">
+      <string>Введите предмет</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding: 5px; border: 1px solid #cccccc; border-radius: 5px;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="task_label">
+     <property name="text">
+      <string>Задание:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTextEdit" name="task_input">
+     <property name="placeholderText">
+      <string>Введите задание</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding: 5px; border: 1px solid #cccccc; border-radius: 5px;</string>
+     </property>
+     <property name="maximumHeight">
+      <number>80</number>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="deadline_date_label">
+     <property name="text">
+      <string>Дата дедлайна:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDateEdit" name="deadline_date_input">
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding: 5px; border: 1px solid #cccccc; border-radius: 5px;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="deadline_time_label">
+     <property name="text">
+      <string>Время дедлайна:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTimeEdit" name="deadline_time_input">
+     <property name="styleSheet">
+      <string notr="true">padding: 5px; border: 1px solid #cccccc; border-radius: 5px;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="add_task_button">
+     <property name="text">
+      <string>Добавить задание</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #4CAF50; color: white; font-size: 14px; font-weight: bold; border: none; border-radius: 5px; padding: 10px;</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
